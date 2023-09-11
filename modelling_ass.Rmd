@@ -1,0 +1,33 @@
+---
+title: "Arbeidskrav"
+author: "Gruppe 1 - Nordhordalandsbroen"
+subtitle: MSB204 - Transportmodeller og regionalutvikling
+output:
+  pdf_document: default
+  html_notebook: default
+  word_document: default
+lang: nb-NO
+editor_options: 
+  markdown: 
+    wrap: 
+bibliography: 
+---
+
+```{r setup, message = FALSE, echo = FALSE}
+library(dplyr)
+library(tidyverse)
+knitr::opts_chunk$set(echo=FALSE)
+```
+
+```{r nye navn}
+names(data1_) <- c("arbeidsstedskommune", "bostedskommune", "arstall", "antall")
+```
+
+```{r endre datasett}
+# data1_ = pendling fra Alver (Lindås, Radøy, Meland), Masfjorden, Austrheim, Modalen til Bergen. år 2002, 2012, 2022
+
+#wide_data1 <- data1_ %>%
+ # pivot_wider(names_from = arstall, values_from = antall)
+  
+    
+```
